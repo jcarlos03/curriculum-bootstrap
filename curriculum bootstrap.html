@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Curriculum con Bootstrap</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="d-grid container mt-3">
+  <h2>Curriculum Vitae</h2>
+  <button type="button" class="btn btn-primary btn-block" data-bs-toggle="collapse" data-bs-target="#demo">Experiencia</button>
+  <div id="demo" class="collapse">
+  ª
+  </div>
+</div>
+<div class="d-grid container mt-3">
+  <button type="button" class="btn btn-primary btn-block" data-bs-toggle="collapse" data-bs-target="#demo1">Formación</button>
+  <div id="demo1" class="collapse">
+    <table class="table">
+    <thead>
+      <tr>
+        <th>Formación</th>
+        <th>Colegio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Educación Infantil</td>
+        <td>CEIP Leonardo Da Vinci</td>
+      </tr>
+      <tr>
+        <td>Educación Primaria</td>
+        <td>CEIP Leonardo Da Vinci</td>
+      </tr>
+      <tr>
+        <td>Educación Secundaria</td>
+        <td>Colegio Alkor</td>
+      </tr>
+      <tr>
+        <td>Bachillerato</td>
+        <td>Colegio Villalkor</td>
+      </tr>
+      <tr>
+        <td>Formación Profesional Superior de Administración de Sistemas Informaticos en Red</td>
+        <td>IES El Cañaveral</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+<div class="d-grid container mt-3">
+  <button type="button" class="btn btn-primary btn-block" data-bs-toggle="collapse" data-bs-target="#demo2">Contacto</button>
+  <div id="demo2" class="collapse">
+    <form action="/action_page.php">
+      <div class="mb-3 mt-3">
+        <label for="emp">Empresa:</label>
+          <input type="text" class="form-control" id="emp" placeholder="Nombre de la empresa" name="emp">
+      </div>
+      <div class="mb-3">
+        <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico" name="email">
+      </div>
+      <div class="mb-3">
+        <label for="comm">Observaciones:</label>
+          <textarea class="form-control" rows="6" id="comm" placeholder="Observaciones" name="comm"></textarea>
+      </div>
+    <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#myModal">Enviar</button>
+  </div>
+</div>
+</body>
+</html>
